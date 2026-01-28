@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Peluquería Johana</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top" class="page-peluqueria">
+
+
+<!-- NAVBAR (estilo Agency) -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-agency">
+  <div class="container">
+    <!-- EDITA: Nombre/Logo -->
+    <a class="navbar-brand brand" href="index.html">Jo  Peluquería y Barbería</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto text-uppercase">
+        <a class="nav-link" href="index.html">Inicio</a>
+        <a class="nav-link" href="peluqueria.html">Peluquería</a>
+        <a class="nav-link" href="barberia.html">Barbería</a>
+      </ul>
+
+      <!-- Iconos (opcional) -->
+      <div class="d-flex gap-3 ms-lg-3 mt-3 mt-lg-0">
+        <a class="nav-icon" href="https://instagram.com/tuusuario" target="_blank" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a class="nav-icon" href="https://wa.me/56957284234?text=Hola%20quiero%20agendar%20una%20hora" target="_blank" aria-label="WhatsApp">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <a class="nav-icon" href="https://www.google.com/maps/search/?api=1&query=TU+DIRECCION_AQUI" target="_blank" aria-label="Ubicación">
+          <i class="bi bi-pin-map-fill"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- PELUQUERÍA -->
+<section class="section" id="peluqueria">
+  <div class="container">
+
+    <!-- Encabezado -->
+    <div class="text-left mb-5">
+      <h2 class="section-title">PELUQUERÍA</h2>
+      <p class="section-subtitle">Cortes, color y tratamientos profesionales.</p>
+    </div>
+
+    <!-- Servicios principales -->
+    <div class="row g-4 mb-5">
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <div class="icon-circle mb-3"><i class="bi bi-scissors"></i></div>
+            <h5 class="card-title fw-bold">Cortes</h5>
+            <p class="card-text text-muted mb-3">Dama • Niña/niño • Estilo</p>
+            <a href="#precios-peluqueria" class="btn btn-cta">Ver precios</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <div class="icon-circle mb-3"><i class="bi bi-palette"></i></div>
+            <h5 class="card-title fw-bold">Color</h5>
+            <p class="card-text text-muted mb-3">Baño de color • Mechas • Retoque</p>
+            <a href="#precios-peluqueria" class="btn btn-cta">Ver precios</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <div class="icon-circle mb-3"><i class="bi bi-stars"></i></div>
+            <h5 class="card-title fw-bold">Tratamientos</h5>
+            <p class="card-text text-muted mb-3">Hidratación • Reparación • Brillo</p>
+            <a href="#precios-peluqueria" class="btn btn-cta">Ver precios</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Precios -->
+    <div id="precios-peluqueria" class="mb-5">
+      <div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-3">
+        <div>
+          <h3 class="fw-bold m-0">Precios Peluquería</h3>
+          <p class="text-muted m-0">Valores referenciales. Confirmar según largo/volumen.</p>
+        </div>
+        <a class="btn btn-cta"
+           href="https://wa.me/56957284234?text=Hola%20quiero%20agendar%20una%20hora%20para%20peluquer%C3%ADa"
+           target="_blank">
+          Agendar por WhatsApp
+        </a>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="price-row">
+            <div>
+              <div class="item-name">Corte dama</div>
+              <div class="item-desc">Incluye lavado (opcional)</div>
+            </div>
+            <div class="item-price">$15.000</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="price-row">
+            <div>
+              <div class="item-name">Corte + brushing</div>
+              <div class="item-desc">Peinado con secado</div>
+            </div>
+            <div class="item-price">$22.000</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="price-row">
+            <div>
+              <div class="item-name">Baño de color</div>
+              <div class="item-desc">Desde (según largo)</div>
+            </div>
+            <div class="item-price">$30.000</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="price-row">
+            <div>
+              <div class="item-name">Mechas / babylights</div>
+              <div class="item-desc">Desde (evaluación previa)</div>
+            </div>
+            <div class="item-price">$55.000</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="price-row">
+            <div>
+              <div class="item-name">Hidratación profunda</div>
+              <div class="item-desc">Incluye mascarilla</div>
+            </div>
+            <div class="item-price">$20.000</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="price-row">
+            <div>
+              <div class="item-name">Alisado / botox capilar</div>
+              <div class="item-desc">Desde (según evaluación)</div>
+            </div>
+            <div class="item-price">$65.000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- PRODUCTOS (cards simple) -->
+<section id="productos" class="section">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title">PRODUCTOS</h2>
+      <p class="section-subtitle">
+        Productos profesionales para el cuidado de tu cabello
+      </p>
+    </div>
+
+
+    <div class="row g-4">
+      <!-- EDITA: productos -->
+
+  <div class="col-md-4">
+    <div class="card h-100">
+      <img src="images/imagen_shampoo.jpg" class="card-img-top" alt="Shampoo">
+      <div class="card-body">
+        <h5 class="card-title">Shampoo Reparador Profesional</h5>
+        <p class="card-text">Shampoo Reparador Salon $7.000</p>
+        <a href="https://wa.me/56954182875?text=Hola%20quiero%20consultar%20por%20un%20producto"
+           class="btn btn-primary">
+           Consulta aquí
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100">
+      <img src="images/imagen_shampoo.jpg" class="card-img-top" alt="Shampoo">
+      <div class="card-body">
+        <h5 class="card-title">Shampoo Reparador Profesional</h5>
+        <p class="card-text">Shampoo Reparador Salon $7.000</p>
+        <a href="https://wa.me/56954182875?text=Hola%20quiero%20consultar%20por%20un%20producto"
+           class="btn btn-primary">
+           Consulta aquí
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100">
+      <img src="images/imagen_shampoo.jpg" class="card-img-top" alt="Shampoo">
+      <div class="card-body">
+        <h5 class="card-title">Shampoo Reparador Profesional</h5>
+        <p class="card-text">Shampoo Reparador Salon $7.000</p>
+        <a href="https://wa.me/56954182875?text=Hola%20quiero%20consultar%20por%20un%20producto"
+           class="btn btn-primary">
+           Consulta aquí
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100">
+      <img src="images/shampoo1.jpg" class="card-img-top" alt="Shampoo">
+      <div class="card-body">
+        <h5 class="card-title">Shampoo Reparador Profesional</h5>
+        <p class="card-text">Shampoo Reparador Salon $7.000</p>
+        <a href="https://wa.me/56954182875?text=Hola%20quiero%20consultar%20por%20un%20producto"
+           class="btn btn-primary">
+           Consulta aquí
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+
+
+
+    <!-- Mini galería (opcional) -->
+    <div class="mb-4 trabajos-galeria">
+      <h3 class="fw-bold mb-3">Trabajos</h3>
+      <div class="row g-3">
+        <div class="col-6 col-md-3">
+          <img src="images/pelu1.jpg" class="w-100 rounded-4" alt="Trabajo peluquería 1">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="images/pelu2.jpg" class="w-100 rounded-4" alt="Trabajo peluquería 2">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="images/pelu3.jpg" class="w-100 rounded-4" alt="Trabajo peluquería 3">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="images/pelu4.jpg" class="w-100 rounded-4" alt="Trabajo peluquería 4">
+        </div>
+      </div>
+      <p class="text-muted mt-2 mb-0">Tip: usa fotos reales tuyas para que se vea más profesional.</p>
+    </div>
+
+  </div>
+</section>

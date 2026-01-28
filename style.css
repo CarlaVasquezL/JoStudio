@@ -1,0 +1,376 @@
+/* =========================
+   FUENTES
+   ========================= */
+
+@font-face{
+  font-family: "Cronde";
+  src: url("../fonts/CRONDERegular.woff2") format("woff2"),
+       url("../fonts/CRONDERegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Cronde";
+  src: url("../fonts/CRONDEItalic.woff2") format("woff2"),
+       url("../fonts/CRONDEItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* OJO: si tu CSS está en la raíz (mismo nivel que /fonts), usa "fonts/..."
+   Si tu CSS está dentro de /css, usa "../fonts/..." */
+@font-face{
+  font-family: "Bileha";
+  src: url("fonts/Bileha.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* =========================
+   BASE
+   ========================= */
+
+html { scroll-behavior: smooth; }
+
+body{
+  padding-top: 72px;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #f2f2f2; /* default (lo pisan los temas por página) */
+}
+
+section{ scroll-margin-top: 90px; }
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.nav-agency{
+  background: rgba(0,0,0,.92);
+}
+
+.brand{
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+.nav-icon{
+  color: #fff;
+  font-size: 1.35rem;
+  text-decoration: none;
+  opacity: .9;
+}
+.nav-icon:hover{ opacity: 1; }
+
+/* Fuente solo para la barra (sin cambiar fondo/colores por accidente) */
+.nav-agency,
+.nav-agency .brand,
+.nav-agency .nav-link{
+  font-family: "Bileha", system-ui, sans-serif; color: #c996a1;
+}
+
+/* =========================
+   HERO (Carrusel)
+   ========================= */
+
+.hero-agency{
+  position: relative;
+  height: 480px;       /* ajusta si quieres */
+  background: #000;
+  overflow: hidden;
+  padding: 0 !important;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-agency #carouselExampleCaptions,
+.hero-agency #carouselExampleCaptions .carousel-inner,
+.hero-agency #carouselExampleCaptions .carousel-item{
+  height: 100% !important;
+}
+
+.hero-agency #carouselExampleCaptions .carousel-item img{
+  height: 100% !important;   /* antes tenías 150% (eso puede cortar raro) */
+  width: 100% !important;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.hero-agency #carouselExampleCaptions .carousel-item::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+}
+
+.hero-agency .carousel-caption{
+  z-index: 2;
+}
+
+/* =========================
+   SECCIONES
+   ========================= */
+
+.section{
+  padding: 80px 0;
+}
+
+.section-alt{
+  background: #f6f6f6;
+}
+
+.section-title{
+  font-weight: 800;
+}
+
+.section-subtitle{
+  color: #666;
+}
+
+/* Iconos en círculo */
+.icon-circle{
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  background: #D8A7B1;
+  color: #111;
+  font-size: 2rem;
+}
+
+/* =========================
+   PRECIOS
+   ========================= */
+
+.price-row{
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 18px rgba(0,0,0,.06);
+}
+
+.item-name{ font-weight: 800; }
+.item-desc{ font-size: .9rem; color: #666; }
+.item-price{ font-weight: 900; }
+
+/* =========================
+   BOTONES
+   ========================= */
+
+.btn-cta{
+  background: #D8A7B1;
+  border: none;
+  color: #111;
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.btn-cta:hover{
+  filter: brightness(0.95);
+}
+
+/* =========================
+   PRODUCTOS
+   ========================= */
+
+#productos .card .btn{
+  background-color: #D8A7B1;
+  border-color: #D8A7B1;
+  color: #111;
+  font-weight: 700;
+}
+
+#productos .card .btn:hover{
+  background-color: #c996a1;
+  border-color: #c996a1;
+  color: #111;
+}
+
+#productos .card-img-top{
+  height: 240px;
+  object-fit: contain; /* NO recorta */
+  background: #fff;
+  padding: 12px;
+}
+
+/* =========================
+   PELUQUERÍA (detalles)
+   ========================= */
+
+#peluqueria .card{
+  border-radius: 18px;
+}
+
+/* Card ancha centrada */
+.pelu-card{
+  max-width: 1100px;  /* 1700 era demasiado */
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,.1);
+  margin: 0 auto;
+}
+
+/* SOLO galería de trabajos */
+.trabajos-galeria img{
+  height: 160px;
+  object-fit: cover;
+}
+
+/* =========================
+   MAPA
+   ========================= */
+
+.map-wrapper{
+  max-width: 520px;
+  margin-left: auto;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,.12);
+}
+
+.map-wrapper img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   TEMAS POR PÁGINA
+   ========================= */
+
+/* INDEX: fondo blanco */
+body.page-index{
+  background: #fff;
+  color: #111;
+}
+
+/* En index NO queremos que todas las .section queden rosadas */
+body.page-index .section{
+  background: transparent;
+}
+
+/* Peluquería: rosado suave */
+body.page-peluqueria{
+  background: #FAF4F6;
+  color: #111;
+}
+
+/* Barbería: oscuro premium */
+body.page-barberia{
+  background: #0f0f10;
+  color: #f2f2f2;
+}
+
+body.page-barberia .section-title{ color:#f2f2f2; }
+body.page-barberia .section-subtitle{ color:#bdbdbd; }
+
+/* Cards pro de servicios */
+.service-card{
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 22px;
+  padding: 34px 26px;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(0,0,0,.06);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.service-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 26px 60px rgba(0,0,0,.10);
+  border-color: rgba(216,167,177,.65); /* palo rosa */
+}
+
+/* Icono más elegante */
+.service-card .icon-circle{
+  width: 96px;
+  height: 96px;
+  border-radius: 999px;
+  margin: 0 auto 18px;
+  background: rgba(216,167,177,.35);
+  border: 1px solid rgba(216,167,177,.55);
+  display: grid;
+  place-items: center;
+}
+
+.service-card .icon-circle i{
+  font-size: 2.2rem;
+  color: #111;
+}
+
+/* Textos */
+.service-title{
+  font-weight: 800;
+  letter-spacing: .2px;
+  margin: 6px 0 8px;
+}
+
+.service-desc{
+  color: #555;
+  margin: 0 0 16px;
+  line-height: 1.4;
+}
+
+/* Link pro */
+.service-link{
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+  color: #c996a1; /* palo rosa oscuro */
+}
+
+.service-link span{
+  transition: transform .18s ease;
+}
+
+.service-card:hover .service-link span{
+  transform: translateX(4px);
+}
+
+
+.title-line{
+  width: 72px;
+  height: 4px;
+  background: #d8a7b1;
+  border-radius: 999px;
+  margin: 14px auto 0;
+}
+
+
+.services-wrapper{
+  max-width: 1080px;
+}
+
+
+.map-embed{
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 30px rgba(0,0,0,.12);
+}
+
+.card{
+  border-radius: 18px;
+}
+
+.card .btn{
+  background-color: #D8A7B1;
+  border: none;
+  color: #111;
+  font-weight: 600;
+}
+.card .btn:hover{
+  background-color: #c996a1;
+}
+
+.section-modulos{
+  margin-top: 120px; /* ajusta: 80 / 100 / 120 */
+}
